@@ -1,5 +1,5 @@
 import React from "react";
-import {Text, StyleSheet,View, FlatList}from "react-native";
+import {Text, StyleSheet,View, FlatList, Button}from "react-native";
 
 const Exercise3 =()=>{
     const cities=[
@@ -14,11 +14,19 @@ const Exercise3 =()=>{
         {name:'Birmingham'},
     ];
     return(
+        
         <View style={styles.Exo3style}>
-          <FlatList
-        keyExtractor={(cities)=>cities.name}
-        data = {cities}
-        renderItem={(item)=>{
+            <Button
+                title="Hide"
+                
+            />
+            <Button
+                title="show"
+            />
+         <FlatList
+             keyExtractor={(cities)=>cities.name}
+             data = {cities}
+             renderItem={(item)=>{
             return <Text>{cities.name}</Text>
         }
         }
@@ -37,3 +45,4 @@ const styles=StyleSheet.create({
     }
 });
 export default Exercise3;
+

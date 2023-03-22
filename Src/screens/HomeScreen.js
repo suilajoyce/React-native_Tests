@@ -5,15 +5,15 @@ import Exercise1 from "./Exercise1";
  const HomeScreen =()=>{
     return <View>
         <Button
-        title="Exercise1"
+        title="Screen1"
         onPress={()=>navigation.navigate("Exercise1")}
         />
         <Button
-        title="Exercise2"
+        title="Screen2"
         onPress={()=>navigation.navigate("Exercise2")}
         />
         <Button
-        title="Exercise3"
+        title="Screen3"
         onPress={()=>navigation.navigate("Exercise3")}
         />
     </View>
